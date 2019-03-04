@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/universal.css">
+    <link rel="stylesheet" href="css/drawPage.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Drawessager</title>
+</head>
+
+<body onload="init()">
+    <script src="js/draw.js"></script>
+    <div class = "header">
+      <div class = "left">
+        <a href="login.html" class="logo">Log Out</a>
+        <a href="viewaccount.html" class="logo">My Account</a>
+      </div>
+    </div>
+
+    <div class = "leftbarpanel">
+            <table>
+                    <tr>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class ="lables" for="color">Line Color</label>
+                        <input id="color" name="color" type="color" />
+                    </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class ="lables" for="line_width">Line Width</label>
+                        <input type="range" min="1" max="10" value="5" class="slider" id="line_width"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class ="lables" for="color">Background Color</label>
+                        <input id="color_background" name="color_background" type="color" value = "#ffffff" onchange="background_color_change()"/>
+                    </td>
+                    </tr>
+                  </table>
+        <input type="button" value="Clear" id="clr" onclick="clear_message()">
+        <br>
+        <input type="button" value="Send" id="send" onclick="">
+    </div>
+
+    <div class = "toprightbarpanel">
+
+    </div>
+
+    <div class = "bottomrightbarpanel">
+            <canvas id="can" width="1500" height="350"></canvas>
+    </div>
+
+    <div class="footer">
+        <div id="button"></div>
+            <div id="container">
+                <div id="cont">
+                    <div class="footer_center">
+                        <h3>CP476 Final Project - By Taelor McMillan, Ryley Davenport</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</body>
+
+</html>

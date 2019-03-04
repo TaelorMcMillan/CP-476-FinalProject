@@ -1,0 +1,32 @@
+canvas{
+    border:2px solid;
+    background-color: white;
+    margin: 0.5%;
+}
+
+label{
+    font-family: "Arial Black", Gadget, sans-serif;
+    margin-bottom: 10px;
+    display: block;
+}
+table{
+    border: 5px solid black;
+    width: 40%;
+    margin-left: 15%;
+    background-color: white;
+}
+td{
+    border: 2px solid black;
+    text-align: center;
+    height: 150px;
+}
+input[type=button]{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin-left: 15px;
+    margin-top: 50px;
+    cursor: pointer;
+}
