@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/universal.css">
+    <link rel="stylesheet" href="css/accountPage.css">
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    <meta charset="UTF-8">
+    <title>Account</title>
+</head>
+
+
+<body>
+    <script src="fireBase.js"></script>
+    <div class="header">
+        <div class="left">
+            <a href="login.html" class="logo">Log Out</a>
+            <a href="messagepage.html" class="logo">Messages</a>
+        </div>
+    </div>
+    <div class="column middle">
+        <table>
+            <tr>
+                <td class="lables">Name:</td>
+                <td class="lables" id="name">****Name Will Be Displayed Here****</td>
+                <td><input type="button" value="Change Name" id="c_name" onclick="c_name()"></td>
+            </tr>
+            <tr>
+                <td class="lables">Password:</td>
+                <td class="lables" id="password">To Change Password Press The Button &#129130;</td>
+                <td><input type="button" value="Change Pssword" id="c_pass" onclick="c_pass()"></td>
+            </tr>
+            <tr>
+                <td class="lables">Email:</td>
+                <td class="lables" id="email">****Email Will Be Displayed Here****</td>
+                <td><input type="button" value="Change Email" id="c_email" onclick="c_email()"></td>
+            </tr>
+        </table>
+
+        <script src="viewaccount.js"></script>
+    </div>
+
+
+</body>
+<script src="js/accountpage.js"></script>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/sign-up.css">
+  <title>Sign up </title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="left">
+            <a href="login.html" class="logo">Login</a>
+        </div>
+    </div>
+
+     <div class="container">
+            <div class="navigation">
+                <ol>
+                    <li><a href="#"  data-ref="name">Name</a></li>
+                    <li><a href="#"  data-ref="uname">Username</a></li>
+                    <li><a href="#"  data-ref="email">Email</a></li>
+                    <li><a href="#"   data-ref="viewpswd">Password</a></li>
+                    <li><a href="#"  data-ref="phone">Phone</a></li>
+                </ol>
+            </div>
+            <form id="sign-form" class="sign-form" action = "messagepage.html">
+                <ol class="questions">
+                    <li>
+                        <span><label for="name">Enter your first and last name</label></span>
+						<input class="active" id="name" name="name" type="text" placeholder="Enter your full name" autofocus/>
+                    </li>
+                    <li>
+				        <span><label for="uname">Enter a username for the site.</label></span>
+                        <input id="uname" name="username" type="text" placeholder="Enter a username" autofocus/>
+					</li>
+                    <li>
+				        <span><label for="email">Enter your email</label></span>
+                        <input id="email" name="email" type="text" placeholder="Email"  autofocus/>
+					</li>
+                    <li>
+                        <span><label for="password">Choose a password</label></span>
+                        <input id="viewpswd" name="password" type="text" placeholder="this your password"/>
+                        <input id="password" name="password" type="password" placeholder="make sure you dont forget" autofocus/>
+                        <span id="show-pwd" class="view"></span>
+					</li>
+                    <li>
+                        <span><label for="phone">Enter your phone number</label></span>
+                            <select name="countryCode" class="country"  >
+                                <option data-countryCode="US" value="1">(+1) CA </option>
+
+                            </select>
+                            <input id="phone" name="phone" type="text" autofocus/>
+                    </li>
+                    <li><p style="margin-top: 45px;font-size: 32pt;float:right">
+                            <button type="submit" style="background-color:#4CAF50; padding: 10px;">Create Account</button></li>
+                </ol>
+                <div class="error-message"></div>
+            </form>
+        <h1 id="wf" style="opacity:0;width: 600px; margin-top:1.1em;display:none; margin-bottom:1em">Thank you</h1>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+
+
+
+
+
+
+
+
+<script  src="js/sign-up.js"></script>
+<div class="footer">
+    <div id="button"></div>
+        <div id="container">
+            <div id="cont">
+                <div class="footer_center">
+                    <h3>CP476 Final Project - By Taelor McMillan, Ryley Davenport</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
