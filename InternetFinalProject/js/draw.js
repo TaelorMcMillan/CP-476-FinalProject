@@ -14,23 +14,24 @@ function init() {
     w = canvas.width;
     h = canvas.height;
 
-    canvas.addEventListener("mousemove", function (e) {
+    canvas.addEventListener("mousemove", function(e) {
         find('move', e)
     }, false);
-    canvas.addEventListener("mousedown", function (e) {
+    canvas.addEventListener("mousedown", function(e) {
         find('down', e)
     }, false);
-    canvas.addEventListener("mouseup", function (e) {
+    canvas.addEventListener("mouseup", function(e) {
         find('up', e)
     }, false);
-    canvas.addEventListener("mouseout", function (e) {
+    canvas.addEventListener("mouseout", function(e) {
         find('out', e)
     }, false);
 }
 
-function background_color_change(){
+function background_color_change() {
     document.getElementById('can').style.backgroundColor = document.getElementById('color_background').value;
 }
+
 function draw() {
     x = document.getElementById('color').value;
     y = document.getElementById('line_width').value;
@@ -73,10 +74,17 @@ function find(res, e) {
         }
     }
 }
+
 function clear_message() {
     ctx.clearRect(0, 0, w, h);
     document.getElementById('can').style.backgroundColor = 'white';
     document.getElementById('color_background').value = "#ffffff";
-    document.getElementById('color').value ='black';
+    document.getElementById('color').value = 'black';
     document.getElementById('line_width').value = '5';
+}
+
+function canvas_img() {
+    var image = new Image();
+    image.src = canvas.toDataURL("image/png");
+    return image;
 }
